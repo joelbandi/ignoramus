@@ -1,2 +1,2 @@
 # ignoramus
-Even an ignoramus can create a .gitignore now
+Even an ignoramus can create a `.gitignore` now
