@@ -1,0 +1,40 @@
+{
+  "name": "ignoramus",
+  "version": "1.0.0",
+  "description": "An ignoramus' tool for creating .gitignore files.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "ava"
+  },
+  "bin": {
+    "ignoramus": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelbandi/ignoramus.git"
+  },
+  "keywords": [
+    "gitignore",
+    "cli",
+    "utilities",
+    "github",
+    "git"
+  ],
+  "author": "joelbandi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelbandi/ignoramus/issues"
+  },
+  "homepage": "https://github.com/joelbandi/ignoramus#readme",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "got": "^7.1.0",
+    "meow": "^3.7.0",
+    "ora": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "eslint": "^4.1.1"
+  }
+}
