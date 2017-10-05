@@ -14,11 +14,11 @@ const URL = 'https://www.'+DOMAIN+'/api/';
 const cli = meow(`
         Usage
           $ ignoramus create [language/stack/editor]
-          $ ignoramus add [language/stack/editor]
+          $ ignoramus append [language/stack/editor]
 
         Commands
           create - creates .gitignore file
-          add - appends to the .gitignore file
+          append - appends to the .gitignore file
 
         Options
           --version, -v displays version
@@ -26,9 +26,9 @@ const cli = meow(`
 
         Example
           $ ignoramus create node
-          $ ignoramus add ruby
+          $ ignoramus append ruby
           $ ignoramus create atom
-          $ ignoramus add lamp
+          $ ignoramus append lamp
           $ ignoramus create java,ruby,atom
 `,{
   alias: {
@@ -72,7 +72,7 @@ got(urlGen(cli.input[1])).then(response => {
         if (err) {
           spinner.fail(chalk.bold.red(` Error creating and writing a file.`));
         }
-        spinner.succeed(chalk.bold.green(` The .gitignore for ${cli.input[1]} has been added.`));
+        spinner.succeed(chalk.bold.green(` The .gitignore for ${cli.input[1]} has been appended.`));
       });
     }
 
