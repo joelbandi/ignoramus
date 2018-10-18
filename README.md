@@ -9,7 +9,7 @@
 #### Usage
 
 1. `$ ignoramus create java` -> creates a java `.gitignore` file
-2. `$ ignoramus append ruby` -> appends a ruby `.gitignore` file to the exisiting file. Creates new file if it doesnt.
+2. `$ ignoramus add ruby` -> appends a ruby `.gitignore` file to the exisiting file. Creates new file if it doesnt.
 
 The files are created in the present working directory
 
