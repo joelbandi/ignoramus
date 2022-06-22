@@ -29,7 +29,7 @@
   "homepage": "https://github.com/joelbandi/ignoramus#readme",
   "dependencies": {
     "chalk": "^2.0.1",
-    "got": "^7.1.0",
+    "got": "^11.8.5",
     "meow": "^3.7.0",
     "ora": "^1.3.0"
   },
